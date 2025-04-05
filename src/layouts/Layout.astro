@@ -1,3 +1,9 @@
+---
+import 'bootstrap/dist/css/bootstrap.min.css';
+const {title} = Astro.props;
+---
+
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,10 +11,21 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		
+		<div class="container">
+			<header>
+				<h1>{title}</h1>
+			</header>
+			<main>
+				<slot name="content" />
+			</main>
+			<footer>
+				<p>&copy; 2023 Astro Basics</p>
+			</footer>
+		</div>
 	</body>
 </html>
 

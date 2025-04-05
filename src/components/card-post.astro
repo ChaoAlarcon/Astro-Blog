@@ -1,0 +1,33 @@
+---
+const {post} = Astro.props;
+---
+
+<article class="card-post">
+    <h2>{post.data.title}</h2>
+    <p>{post.data.description}</p>
+    <p>Fecha de publicación: {post.data.pubDate}</p>
+    <p>Etiquetas: {post.data.tags.join(', ')}</p>
+    <a href="{`/blog/${post.slug}`}" class="btn btn-primary">Leer más</a>
+    <div class="content">
+        {post.body}
+    </div>
+</article>
+
+<style>
+    .card-post {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .card-post h2 {
+        margin-top: 0;
+    }
+    .card-post .content {
+        margin-top: 10px;
+    }
+
+    .card-post p {
+        margin: 5px 0;
+    }
+</style>
