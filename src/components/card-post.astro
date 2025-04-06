@@ -3,20 +3,18 @@ const {post} = Astro.props;
 ---
 
 <article class="card-post">
-    <h2>{post.data.title}</h2>
+    <h5>{post.data.title}</h5>
     <p>{post.data.description}</p>
-    <p>Fecha de publicación: {post.data.pubDate}</p>
+    <p>Fecha de publicación:{post.data.publishedAt}</p>
     <p>Etiquetas: {post.data.tags.join(', ')}</p>
-    <a href="{`/blog/${post.slug}`}" class="btn btn-primary">Leer más</a>
-    <div class="content">
-        {post.body}
-    </div>
+    <a href={`/blog/${post.slug}`} class="btn btn-primary">Leer más</a>
+    
 </article>
 
 <style>
     .card-post {
         border: 1px solid #ccc;
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 20px;
         margin: 20px 0;
     }
