@@ -1,7 +1,7 @@
 ---
 title: "Explorando Astro: La Revolución en el Desarrollo Web"
 description: "Astro es un framework JavaScript que optimiza la creación de sitios web rápidos y eficientes, integrando múltiples frameworks de UI y minimizando el JavaScript enviado al navegador para mejorar el rendimiento y SEO."
-publishedAt: 2024-06-29
+publishedAt: 2024-06-29 
 draft: false
 tags: ['javascript', 'webdev']
 category: frameworks

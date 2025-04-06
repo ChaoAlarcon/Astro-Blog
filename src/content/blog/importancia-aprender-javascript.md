@@ -1,7 +1,7 @@
 ---
 title: "La Importancia de Aprender JavaScript en el Desarrollo Web Moderno"
 description: "JavaScript es fundamental para el desarrollo web moderno, permitiendo la creación de aplicaciones interactivas y dinámicas. Su conocimiento es esencial para cualquier desarrollador web que quiera construir soluciones innovadoras y eficientes."
-publishedAt: 2024-06-29
+publishedAt: 2024-06-27
 draft: false
 tags: ['javascript', 'webdev']
 category: programación

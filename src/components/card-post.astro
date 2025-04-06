@@ -6,6 +6,7 @@ const { post } = Astro.props;
 <article class="card-post">
     <h5>{post.data.title}</h5>
     <p>{post.data.description}</p>
+    <p>Publicado: {post.data.publishedAt}</p>
     <p>Tags: {post.data.tags.join(", ")}</p>
     <a href={`/blog/${post.slug}`} class="btn btn-primary">Leer más</a>
 </article>
